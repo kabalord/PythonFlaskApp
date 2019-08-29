@@ -6,3 +6,5 @@ CREATE TABLE Groupe (
 	nom TEXT,
 	description TEXT
 );
+
+INSERT INTO Groupe(nom, description) VALUES("Silverchair", "the best grunge");

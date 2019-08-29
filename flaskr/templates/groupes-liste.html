@@ -1,0 +1,11 @@
+<head>
+	<title>Musical Groupes</title>
+</head>
+<body>
+	<h1>Musical Groupes</h1>
+	<ul>
+		{% for groupe in groupes %}
+			<li><b>{{ groupe['nom'] }}</b> : {{ groupe['description'] }}</li>	
+		{% endfor %}
+	</ul>
+</body>

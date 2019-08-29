@@ -24,11 +24,6 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
-    @app.route('/accueil')
-    def accueil():
-        return 'Hello, Musicians!'
-
     from . import db
     db.init_app(app)
 
